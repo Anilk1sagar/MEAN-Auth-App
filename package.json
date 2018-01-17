@@ -1,0 +1,24 @@
+{
+	"name": "meanauth",
+	"version": "1.0.0",
+	"description": "MEAN stack authentication app",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Anil Sagar",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "*",
+		"body-parser": "*",
+		"cors": "*",
+		"express": "^4.16.2",
+		"jsonwebtoken": "*",
+		"mongoose": "*",
+		"passport": "^0.4.0",
+		"passport-jwt": "*"
+	},
+	"devDependencies": {
+		"@angular/cli": "^1.6.3"
+	}
+}
