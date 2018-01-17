@@ -1,0 +1,9 @@
+<div class="jumbotron text-center">
+    <h1 class="display-4">MEAN Authentication App</h1>
+    <p class="lead">Welcome to our custom MEAN authentication application built from scratch.</p>
+    <hr class="my-4">
+    <p class="lead" *ngIf="!authService.loggedIn()">
+        <a class="btn btn-info" routerLink="/login" role="button">Login</a>
+        <a class="btn btn-success" routerLink="/register" role="button">Register</a>
+    </p>
+</div>

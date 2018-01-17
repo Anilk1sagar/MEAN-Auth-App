@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+.flashMeassage-danger {
+    padding-bottom: 0px;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-left: 5px solid #ea4335;
+    color: #111;
+    border-radius: 2;
+    width: 50%;
+    animation: alertAnimation .2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: fixed;
+    right: 40px;
+    top: 70px;
+}
+
+.flashMeassage-success {
+    padding-bottom: 0px;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-left: 5px solid #28a745;
+    color: #111;
+    border-radius: 0;
+    width: 50%;
+    animation: alertAnimation .2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: fixed;
+    right: 40px;
+    top: 70px;
+}
+
+
+@keyframes alertAnimation {
+    0%   {transform: scale(0);}
+    100% {transform: scale(1);}
+}

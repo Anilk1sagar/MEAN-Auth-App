@@ -1,0 +1,18 @@
+<div *ngIf="!authService.loggedIn()">
+	<h3 class="page-header">Login</h3>
+	<form (submit)="onLoginSubmit()">
+		<div class="form-group">
+			<label for="username">Username</label>
+			<input type="text" class="form-control" [(ngModel)]="username" name="username" placeholder="Username">
+		</div>
+		<div class="form-group">
+			<label for="password">Password</label>
+			<input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password">
+		</div>
+		<button type="submit" class="btn btn-primary">Login</button>
+	</form>
+</div>
+
+<div *ngIf="authService.loggedIn()">
+	<p>You are already logged in go back to <a routerLink="/home">Home</a></p>
+</div>
